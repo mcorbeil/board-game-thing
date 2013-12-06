@@ -23,5 +23,11 @@ thisTurnsBattles.each( function() {
 		}
 		// Attacker allocates hits
 		// Defender and Attacker lose all units with allocated hits (except flagships)
+		for( i=0; i<thisBattlesAttackersHits; i++) {
+			defenderLosesAUnit;
+		}
+		for( i=0; i<thisBattlesDefendersHits; i++) {
+			attackerLosesAUnit;
+		}
 	}
 });
