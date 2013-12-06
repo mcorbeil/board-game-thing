@@ -1,0 +1,27 @@
+thisTurnsBattles.each( function() {
+	thisBattleDefendersAA.FIRES; // We need to account for this somehow
+	while( attackerNotRetreating ) {
+		thisRoundssAttackersHits = 0;
+		thisBattlesAttackers.each( function() {
+			// Deal with subs here too... first-striking and such
+			thisUnitType.each( function() { //check for having attack value, eg transport, carrier
+				roll=rand(1,6);
+				if(roll <= thisUnitType.AttackValue) {
+					thisBattlesAttackersHits ++;
+				}
+			}
+		}
+		// Defender needs to allocate hits here before knowing how many hits they get against attacker
+		thisRoundsDefendersHits = 0;
+		thisBattleDefenders.each( function() {
+			thisUnitType.each( function() {
+				roll=rand(1,6);
+				if(roll <= thisUnitType.DefendValue) {
+					thisRoundsDefendersHits ++;
+				}
+			}
+		}
+		// Attacker allocates hits
+		// Defender and Attacker lose all units with allocated hits (except flagships)
+	}
+});
