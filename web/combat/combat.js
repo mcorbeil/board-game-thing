@@ -149,7 +149,7 @@ function runCombat( attackingArmy, defendingArmy ) {
 		assessHits({ "attackHits" : attackHits , "defendHits" : defendHits});
 		battleOver = assessVictory();
 		if( battleOver !== false ) {
-			alert( battleOver + " has slaughtered there enemies" );
+			alert( battleOver + " has slaughtered their enemies" );
 		}
 	}
 }
